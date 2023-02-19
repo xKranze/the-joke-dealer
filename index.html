@@ -1,18 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<body>
-    <h1>JOKE GENERATOR</h1>
+<html class="has-background-grey-lighter">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JOKE DEALER</title>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="stylesheet" href="assets\style.css">
+  
+</head>
+
+<body>
+  <div id="notification" class="notification is-danger is-light">
+    <button class="delete is-medium"></button>
+    This web page is currently <strong>UNDER CONSTRUCTION</strong>, <a>Thank you for your patience</a>.
+  </div>
+  
+  <!-- hero -->
+  <section id="hero" class="hero is-small has-background-grey-dark is-bold">
+    <div class="hero-body">
+      <p id="hero-title" class="has-text-success">
+        THE JOKE DEALER
+      </p>
+      <p id="day-subtitle" class="subtitle has-text-white has-text-centered"></p>
+      <!-- <p class="subtitle">
+            sub title
+          </p> -->
+    </div>
+  </section>
+  <!-- main body -->
+  <div class="columns">
+    <!-- aside (left side) -->
+    <div class="column is-3">
+      <!-- search box -->
+      <form class="box" id="searchForm">
+        <div class="field">
+          <label class="label">Joke Keyword</label>
+          <div class="control">
+            <input class="input" id="searchString" type="text" placeholder="Search">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Category</label>
+          <div class="control">
+            <div id="dropdown" class="select">
+              <select id="selectCat">
+                <option value="">Any</option>
+                <option value="">Programming</option>
+                <option value="">Misc</option>
+                <option value="">Dark Stuff</option>
+                <option value="">Puns</option>
+                <option value="">Spooky</option>
+                <option value="">Christmas</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="has-text-centered">
+          <button type="submit" class="button" id="searchBtn">Search</button>
+        </div>
+      </form>
+      <!-- searh box ends here -->
+      <!-- search history  -->
+      <label class="label">Favorite</label>
+      <div id="fav-box" class="box favorite">
+
+      </div>
+      <div class="buttons">
+        <button class="button is-danger is-rounded is-fullwidth  clearFabBtn">Clear Jokes</button>
+      </div>
+    </div>
+    
+    <script src="./assets/script.js"></script>
+       <!-- Content (right side) -->
+        <div class="column is-9">
+            <div class="container">
+                <!-- news card -->
+    
+             
+            </div>  
+            <!-- Content (right side) Closing -->
+             
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- <script src="./assets/script.js"></script> -->
+
 </body>
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </html>
