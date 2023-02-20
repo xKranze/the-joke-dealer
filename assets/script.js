@@ -1,4 +1,4 @@
-// alert("Some jokes can be innapropriate, Click OK if you are 18+ of age!");
+alert("Some jokes can be innapropriate and offensive, Click OK if you are 18+ of age and aware of content!");
 
 const notification = document.getElementById('notification');
 var jokes;
