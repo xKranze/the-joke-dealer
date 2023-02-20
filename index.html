@@ -46,39 +46,55 @@
           <div class="control">
             <div id="dropdown" class="select">
               <select id="selectCat">
-                <option value="">Any</option>
-                <option value="">Programming</option>
-                <option value="">Misc</option>
-                <option value="">Dark Stuff</option>
-                <option value="">Puns</option>
-                <option value="">Spooky</option>
-                <option value="">Christmas</option>
+                <option value="Any">Any</option>
+                <option value="Programming">Programming</option>
+                <option value="Misc">Misc</option>
+                <option value="Dark">Dark Stuff</option>
+                <option value="Pun">Pun</option>
+                <option value="Spooky">Spooky</option>
+                <option value="Christmas">Christmas</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Joke Type</label>
+          <div class="control">
+            <div id="dropdown" class="select">
+              <select id="jokeType">
+                <option value="">Both</option>
+                <option value="single">Single</option>
+                <option value="twopart">Two Part</option>
               </select>
             </div>
           </div>
         </div>
         <div class="has-text-centered">
-          <button type="submit" class="button" id="searchBtn">Search</button>
+          <button class="button" id="searchBtn">Search</button>
+        </div>
+        <br>
+        <div class="buttons">
+          <button class="button is-danger is-rounded is-fullwidth  clearFavBtn" id="clearJokesBtn">Clear Jokes</button>
         </div>
       </form>
       <!-- searh box ends here -->
       <!-- search history  -->
+      
       <label class="label">Favorite</label>
       <div id="fav-box" class="box favorite">
 
       </div>
+      
       <div class="buttons">
-        <button class="button is-danger is-rounded is-fullwidth  clearFabBtn">Clear Jokes</button>
+        <button class="button is-danger is-rounded is-fullwidth  clearFavBtn" id="clearFavBtn">Clear Favorites</button>
       </div>
     </div>
     
     <script src="./assets/script.js"></script>
        <!-- Content (right side) -->
         <div class="column is-9">
-            <div class="container">
-                <!-- news card -->
-    
-             
+            <div id="jokesDisplay" class="container">
+                
             </div>  
             <!-- Content (right side) Closing -->
              
