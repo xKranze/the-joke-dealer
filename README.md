@@ -1,4 +1,4 @@
-# the-joke-dealer
+# The Joke Dealer
 Need to lighten the room up? I got the joke for you! Jokes are safe for work!
 
 ## Description
