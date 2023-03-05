@@ -18,5 +18,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 https://jquery.com/
+
 https://bulma.io/
+
 https://jokeapi.dev/
