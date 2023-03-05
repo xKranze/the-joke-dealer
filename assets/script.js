@@ -93,4 +93,5 @@ document.getElementById("clearJokesBtn").addEventListener('click', (e) => {
 document.getElementById("clearFavBtn").addEventListener('click', (e) => {
     e.preventDefault();
     document.getElementById("fav-box").innerHTML = "";
+    localStorage.setItem("favoriteJokes", "");
 });
